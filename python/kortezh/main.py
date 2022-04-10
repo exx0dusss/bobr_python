@@ -55,7 +55,7 @@ except ValueError:
     print("Element out of tuple_3")
 
 print("\n#13\n")#13
-print(f'Count of repeated elements: {my_tuple_3.count(2),(3)}')#ho ho ho
+print(f'Count of repeated elements: {my_tuple_3.count(2),(3)}')
 
 print("\n#14\n")#14
 odd_tuple = tuple()
