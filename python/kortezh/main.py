@@ -52,7 +52,7 @@ print(f'Element in tuple_3: {my_tuple_3.index(3, 4)}')
 try:
     print(f'Element out of tuple_3: {my_tuple_3.index(10,4)}')
 except ValueError:
-    print("Element out of tuple_3")
+    print("Element out of tuple_3: missing")
 
 print("\n#13\n")#13
 print(f'Count of repeated elements: {my_tuple_3.count(2),(3)}')
