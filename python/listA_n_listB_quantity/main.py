@@ -16,7 +16,7 @@ while True:
     print(f'a_list = {a_list}')
     print(f'b_list = {b_list}')
     question = input("Wanna continue? Yes/No ")
-    
+
     if question == "No" or question == "-" or question == "n"\
        or question == "no":
         print("Done")
@@ -26,4 +26,4 @@ while True:
         continue
     else:
         continue
-
+input("")
