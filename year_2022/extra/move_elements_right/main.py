@@ -30,13 +30,13 @@ while True:
             a1_list[0] = a_list[i]
         else:
             a1_list[i + 1] = a_list[i]
-                   
+
     a_list = a1_list.copy()
     print(a_list)
-            
+
 
     question = input("Wanna continue? Yes/No ")
-    
+
     if question == "No" or question == "-" or question == "n"\
        or question == "no":
         print("Done")
