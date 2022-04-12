@@ -1,3 +1,4 @@
+print("\n           Exercise 1              \n")
 print("\n#1\n")
 a = ("Slava Ukraine! ")
 b = ("Heroyam Slava! ")
@@ -68,3 +69,33 @@ print("\n#15\n")
 ab_r = ab.swapcase()
 print(ab_r)
 print(ab_r.swapcase())
+
+print("\n           Exercise 2              \n")
+print("\n#1\n")
+import random
+import string
+def generate_random_string(length):
+    letters = string.digits
+    global rand_string
+    rand_string = ''.join(random.choice(letters) + " " for i in range(length))
+    print("Random string of length", length, "is:", rand_string)
+
+generate_random_string(random.randint(10, 20))
+
+print("\n#2\n")
+rand_list = rand_string.split()
+print(rand_list)
+
+print("\n#3\n")
+rand_max = max(rand_list)
+rand_min = min(rand_list)
+print(f'Max element: {rand_max}\nMin element: {rand_min}')
+
+print("\n#4\n")
+rand_sort = sorted(rand_list)
+print(f'Random list sorted: {rand_sort}')
+
+print("\n#5\n")
+rand_sort_rev = sorted(rand_list, reverse=True)
+print(f'Random list reversed: {rand_sort_rev}')
+print("\n")
