@@ -1,5 +1,5 @@
 print("\n           Laba 5          \n")
-print("\            n#2\            n")
+print("\n            #2            \n")
 print("\n#2.1\n")
 import random
 
