@@ -1,0 +1,30 @@
+from turtle import*
+reset()
+speed(10)
+bgcolor("black")
+goto(-300, 300)
+M = int(input("Количество рядов -> "))
+N = int(input("Количество плит -> "))
+D = int(input("Длина стороны -> "))
+for k in range(M):
+    for j in range(N):
+        color("DeepSkyBlue4")
+        begin_fill()
+        for z in range(3):
+            fd(D)
+            lt(120)
+        end_fill()
+        color("dark turquoise")
+        begin_fill()
+        for z in range(3):
+            fd(D)
+            rt(120)
+        end_fill()
+        fd(D)
+    up()
+    bk(N * D)
+    rt(60)
+    fd(D)
+    lt(60)
+    down()
+mainloop()

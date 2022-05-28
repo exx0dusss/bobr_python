@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {% if title %}
+        {{ title }}
+    {% else %}
+        {{ super() }}
+    {% endif %}
+{% endblock %}
+
+{% block page_content %}
+    <div class="row">
+
+        <div class="center-block bg-light">
+            <h1 class="py-5 text-center">Input New Goods Here</h1>
+        </div>
+
+        <div class="col-lg-2 mx-auto pt-5">
+            <form action="" method="POST">
+                {{ form.csrf_token() }}
+                {% for el in form if el.id != 'csrf_token' %}
+                    <div class="py-2">
+                        {{ el.label }} {{ el }} <span class="text-danger">{{ ' '.join(el.errors) }}</span>
+                    </div>
+                {% endfor %}
+            </form>
+        </div>
+    </div>
+
+    {% if info %}
+        <div class="mt-3 center-block bg-success mx-auto" style="width: 300px; border-radius:25px">
+            {% for str in info %}
+            <h5 class="text-center">{{str}}</h5>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}

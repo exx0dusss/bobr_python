@@ -1,0 +1,21 @@
+<head>
+    <title>
+    {% block title %}
+        {% if title %}
+            {{ title }}
+        {% else %}
+            Default Title
+        {% endif %}
+    {% endblock %}
+    </title>
+</head>
+
+<body>
+    <div id='my_div'>
+    {% block page_content %}
+        {% for el in form %}
+		 {el.label}{el}
+		{% endfor %}
+    {% endblock %}
+    </div>
+</body>
